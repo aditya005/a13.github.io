@@ -3,23 +3,26 @@
 
 <head>
     <meta charset="utf-8" />
-    <title>A13 - Home</title>
-    <base href="/" />
-    <link href="css/app.css" rel="stylesheet" />
-    
-    <!-- If you add any scoped CSS files, uncomment the following to load them
-    <link href="Sandbox_StaticSite.styles.css" rel="stylesheet" /> -->
+    <title>Home</title>
+    <script async src="gtag.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="Names.js"></script>
+    <script src="Slokas.js"></script>
+    <script src="Site.js"></script>
+    <link rel="stylesheet" href="Site.css"/>
+
 </head>
 
 <body>
-    <div id="app">Loading...</div>
+    <div class="app">
+        <div id="Index" class="bigfont"></div>
+        <div id="Name" class="bigfont"></div>
+        <div id="Meaning" class="mediumfont"></div>
+        <div id="Sloka-Sanskrit" class="smallfont"></div>
+        <div id="Sloka-English" class="smallfont"></div>
 
-    <div id="blazor-error-ui">
-        An unhandled error has occurred.
-        <a href="" class="reload">Reload</a>
-        <a class="dismiss">🗙</a>
     </div>
-    <script src="_framework/blazor.webassembly.js"></script>
+
 </body>
 
 </html>

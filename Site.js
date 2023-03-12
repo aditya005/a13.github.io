@@ -1,6 +1,15 @@
 $(document).ready(function(){
 
+    var url = window.location.href.toLowerCase();
+    var nameIndex = Number(url.split('?sloka=')[1]);
+
+
     var randomIndex = Math.floor(Math.random() * Names.length);
+
+    if(nameIndex != NaN && nameIndex != 0 && nameIndex <= Names.length){
+        randomIndex = nameIndex -1;
+    }
+
 
     var randomElement = Names[randomIndex];
     
